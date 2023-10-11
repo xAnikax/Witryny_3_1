@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+	<title>Fibonacci to morda</title>
+</head>
+<body>
+<p><strong>Ciąg Fibonacciego</strong> to ciąg liczb naturalnych okreslony rekurencyjnie.</p>
+<p>
+    F(n) = F<sub>n-1</sub> + F<sub>n-2</sub> dla n&gt0
+</p>
+<ul style="list-style-type: square">
+<li><strong><em>F<sub>0</sub></strong> = 0</em></li>
+<li><strong><em>F<sub>1</sub></strong> = 1</em></li>
+<li><strong><em>F<sub>2</sub></strong> = 2</em></li>
+<li><strong><em>F<sub>3</sub></strong> = 2</em></li>
+<li><strong><em>F<sub>4</sub></strong> = 3</em></li>
+<li><strong><em>F<sub>5</sub></strong> = 5</em></li>
+<li><strong><em>F<sub>6</sub></strong> = 8</em></li>
+<li><strong><em>F<sub>7</sub></strong> = 13</em></li>
+<li><strong><em>F<sub>8</sub></strong> = 21</em></li>
+<li><strong><em>F<sub>9</sub></strong> = 34</em></li>
+</ul>
+<pre>
+    Fibonacci( n )
+    if n=0 then return 0
+    if n=1 then return 1
+    f' ← 0
+    f ← 1
+    for i ← 2 to n
+      do
+        m ← f + f'
+        f' ← f
+        f ← m
+      end
+    return f
+</pre>
+<p><a href="https://pl.wikipedia.org/wiki/Fibonacci">Życiorys Fibonacciego</a></p>
+
+</body>
+</html>
