@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wymagania dotyczące złożoności hasła</title>
+<style>
+  body {
+    font-family: 'Lucida Console';
+    margin-left: 50px;
+  }
+  .superlista li {
+    list-style-image: url('klodka.png');
+    margin-bottom: 5px;
+  }
+  .guzikarbuzik {
+    background: url('klodka.png');
+    border: none;
+    color: black;
+    width: 45px;
+    height: 45px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Wymagania dotyczące złożoności hasła</h2>
+
+<form>
+  <ul class="superlista">
+    <li>
+      <label>Ile znaków ma mieć hasło:</label>
+      <label>
+        <input type="radio" name="dlugosc_hasla" value="6"> 6</label>
+        <input type="radio" name="dlugosc_hasla" value="7"> 7</label>
+        <input type="radio" name="dlugosc_hasla" value="8"> 8</label>
+        <input type="radio" name="dlugosc_hasla" value="9"> 9</label>
+        <input type="radio" name="dlugosc_hasla" value="10"> 10</label>
+        <input type="radio" name="dlugosc_hasla" value="11"> 11</label>
+        <input type="radio" name="dlugosc_hasla" value="12"> 12</label>
+        
+    </li>
+    <li>
+      <label>Rodzaj znaków:</label>
+      <label><input type="checkbox" name="rodzaj_znakow" value="cyfry"> cyfry</label>
+      <label><input type="checkbox" name="rodzaj_znakow" value="male literki"> male litery</label>
+      <label><input type="checkbox" name="rodzaj_znakow" value="wielkie literki"> wielkie litery</label>
+      
+    </li>
+    <li>
+      <label>Wyklucz te litery:</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="a"> a</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="b"> b</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="c"> c</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="d"> d</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="e"> e</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="f"> f</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="g"> g</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="h"> h</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="i"> i</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="j"> j</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="k"> k</label>
+       <br>
+      <label><input type="checkbox" name="wyklucz_literki" value="l"> l</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="m"> m</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="n"> n</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="o"> o</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="p"> p</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="q"> q</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="r"> r</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="s"> s</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="t"> t</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="u"> u</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="v"> v</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="w"> w</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="x"> x</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="y"> y</label>
+      <label><input type="checkbox" name="wyklucz_literki" value="z"> z</label>
+    
+    </li>
+  </ul>
+  <input type="submit" value="OK" class="guzikarbuzik">
+</form>
+
+</body>
+</html>
