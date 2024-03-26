@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektor pseudoelementów</title>
+    <style>
+        p::first-letter {
+            color: magenta;
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            color: cyan;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+    <p>Deserunt dolorem doloremque eaque magni nihil, porro temporibus vel. Laudantium, odio, voluptas.</p>
+</div>
+</body>
+</html>
