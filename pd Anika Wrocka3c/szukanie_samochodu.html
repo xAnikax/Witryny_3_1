@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family:arial;
+            font-size: 14px;
+            table-layout: fixed;
+            width: 100%;
+
+        }
+         tr, td { 
+            border : 3px solid blueviolet ;
+            padding: 10px;
+        
+        }
+     </style>
+            <table>
+<tr>
+<td>marka</td>
+<td rowspan="2">typ nadwozia</td>
+<td>Miesiąc i rok produkcji:</td>
+<td>Przebieg: <input style="width: 100%" id="vol" name="vol" min="100" max="2500"
+    oninput="this.nextElementSibling.value = this.value" value="100" type="range"></td>
+<td rowspan="2">szukaj</td>
+</tr>
+
+
+<tr>
+<td>model</td>
+
+<td>rodzaj paliwa</td>
+<td>cena do:</td>
+</tr>
+
+            </table>
+</body>
+</html>
