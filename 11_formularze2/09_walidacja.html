@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8"/>
+	<title>walidacja </title>
+
+</head>
+<body>
+<form action="Odesłanie.html">
+	<fieldset>
+		<legend>Prosta walidacja po stronie klienta</legend>
+		<strong>tel:</strong> Podaj numer telefonu:
+		<input id="nr" name="nr" type="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+		<br/>
+		<br/>
+		<strong>number:</strong> Podaj liczbę pomiędzy -50 a 0:
+		<input id="liczba" name="liczba" type="number" min="-50" max="0" step="5">
+		<br/>
+		<br/>
+		<strong>url:</strong> Podaj adres url:
+		<input id="link" name="link" required type="url">
+		<br/>
+		<br/>
+		<strong>email:</strong> Podaj a-mail:
+		<input id="mail" name="mail" required type="email">
+		<br/>
+		<br/>
+		<input type="submit" value="Wyślij">
+	</fieldset>
+</form>
+</body>
+</html>
