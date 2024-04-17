@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%
+        }
+
+        td {
+            border-left: 3px solid purple;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="formularz_akcja.html">
+        <table>
+            <tr>
+                <td><label for="marka">Marka:</label> <input type="text" id="marka" name="marka" required></td>
+                <td rowspan="2"> <label>Typ nadwozia: </label> <select for="nadwozie" name="typ_nadwozia" size="5" multiple required>
+                    <option value="coupe">Coupe</option>
+                    <option value="hatchback">hatchback</option>
+                    <option value="kabriolet">kabriolet</option>
+                    <option selected value="kombi">kombi</option>
+                    <option value="sedan">sedan</option>
+                    </select> </td>
+                <td><label for="produkcja">Miesiąc i rok produkcji: </label><input type="date" id="produkcja" name="rok_produkcji"></td>
+                <td></td>
+                <td rowspan="2"> <input type="submit" value="wyslij"></td>
+            </tr>
+
+            <tr>
+                <td><label for="model">Model: </label><input id="model" name="model" type="text"></td>
+                
+                <td><label id="paliwo">Rodzaj paliwa:</label> 
+                <select>
+                    <option value="benzyna">benzyna</option>
+                    <option value="benzyna,elektryk">benzyna+elektryk</option>
+                    <option value="benzyna,gaz">benzyna+gaz</option>
+                    <option value="elektryk">elektryk</option>
+                    <option value="diesel">diesel</option>
+                </select></td>
+                <td></td>
+                
+            </tr>
+
+        </table>
+
+
+
+
+    </form>
+</body>
+
+</html>
