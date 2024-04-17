@@ -23,8 +23,16 @@
      </style>
             <table>
 <tr>
-<td>marka</td>
-<td rowspan="2">typ nadwozia</td>
+<td><label for="marka">Marka:</label> <input type="text" id="marka" name="marka" required></td>
+<td rowspan="2"> 
+    <label>Typ nadwozia: </label>
+    <select for="nadwozie" name="typ_nadwozia" size="5" multiple required>
+    <option value="coupe">Coupe</option>
+    <option value="hatchback">hatchback</option>
+    <option value="kabriolet">kabriolet</option>
+    <option selected value="kombi">kombi</option>
+    <option value="sedan">sedan</option>
+    </select> </td>
 <td>Miesiąc i rok produkcji:</td>
 <td>Przebieg: <input style="width: 100%" id="vol" name="vol" min="100" max="2500"
     oninput="this.nextElementSibling.value = this.value" value="100" type="range"></td>

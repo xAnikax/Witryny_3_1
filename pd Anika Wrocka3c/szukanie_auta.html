@@ -12,7 +12,7 @@
         }
 
         td {
-            border-left: 3px solid purple;
+            border-left: 3px solid blueviolet;
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 10px;
@@ -34,8 +34,9 @@
                     <option value="sedan">sedan</option>
                     </select> </td>
                 <td><label for="produkcja">Miesiąc i rok produkcji: </label><input type="date" id="produkcja" name="rok_produkcji"></td>
-                <td></td>
-                <td rowspan="2"> <input type="submit" value="wyslij"></td>
+                <td>Przebieg: <input style="width: 100%" id="vol" name="vol" min="100" max="2500"
+                    oninput="this.nextElementSibling.value = this.value" value="100" type="range"></td>
+                <td rowspan="2"> <input type="submit" value="Szukaj"></td>
             </tr>
 
             <tr>
