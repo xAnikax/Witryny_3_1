@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: papayawhip;
+            font-family: arial;
+            font-size: 1rem;
+
+} 
+        td {
+    border: 1px solid goldenrod;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+          input {
+
+        background-color:sandybrown;
+        border: 2px solid saddlebrown;
+
+}
+    </style>
+ <table>
+    <tr>
+        <td><input name="pierwsze_imię" placeholder="pierwsze_imię" type="text"></td>
+        <td><input name="drugie_imię" placeholder="drugie_imię" type="text"></td>
+    </tr>
+    <tr>
+        <td><input min="-10" max="0" name="wspołcxynnik"
+            oninput="getElementById('wsp').value=this.value"
+            step="0.1" type="range" value="-10"></td>
+        <td><output id="wsp">-10</output></td>
+    </tr>
+    <tr>
+        <td colespan="2"><textarea name="" id="" cols="48" rows="5"></textarea></td>
+        
+    </tr>
+    <tr>
+        <td><input name="szukaj" placeholder="szukaj" type="search"></td>
+        <td><input name="wybierz_postać" placeholder="wybierz_postać" type="search"></td>
+    </tr>
+    <tr>
+        <td><input name="alert"  type="button">Pokaz okienko alert</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        
+    </tr>
+   
+
+ </table>
+</body>
+</html>
