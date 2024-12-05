@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umów wizytę lekarską</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        form {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dane pacjenta</legend>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required>
+
+            <label for="pesel">PESEL:</label>
+            <input type="text" id="pesel" name="pesel" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefon">Numer telefonu:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+
+            <label for="ulica">Ulica:</label>
+            <input type="text" id="ulica" name="ulica" required>
+
+            <label for="numer-domu">Numer domu:</label>
+            <input type="text" id="numer-domu" name="numer-domu" required>
+
+            <label for="numer-mieszkania">Numer mieszkania (opcjonalnie):</label>
+            <input type="text" id="numer-mieszkania" name="numer-mieszkania">
+
+            <label for="kod-pocztowy">Kod pocztowy:</label>
+            <input type="text" id="kod-pocztowy" name="kod-pocztowy" required>
+
+            <label for="miasto">Miasto:</label>
+            <input type="text" id="miasto" name="miasto" required>
+
+            <label for="data-urodzenia">Data urodzenia:</label>
+            <input type="date" id="data-urodzenia" name="data-urodzenia" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dane dotyczące wizyty</legend>
+            <label for="lekarz">Lekarz:</label>
+            <select id="lekarz" name="lekarz" required>
+                <option value="" disabled selected>Wybierz lekarza</option>
+                <option value="lekarz1">Lekarz 1</option>
+                <option value="lekarz2">Lekarz 2</option>
+                <option value="lekarz3">Lekarz 3</option>
+            </select>
+
+            <label for="data-wizyty">Data wizyty:</label>
+            <input type="date" id="data-wizyty" name="data-wizyty" required>
+
+            <label for="godzina-wizyty">Godzina wizyty:</label>
+            <input type="time" id="godzina-wizyty" name="godzina-wizyty" required>
+
+            <label for="uwagi">Dodatkowe uwagi:</label>
+            <textarea id="uwagi" name="uwagi" rows="4" placeholder="Podaj dodatkowe informacje..."></textarea>
+        </fieldset>
+
+        <button type="submit">Umów wizytę</button>
+    </form>
+</body>
+</html>

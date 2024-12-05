@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umów wizytę lekarską</title>
+    <link rel="stylesheet" href="formularz.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dane pacjenta</legend>
+            <label for="imie">wprowadz imię:</label>
+            <input type="text" id="imie" name="imie">
+            
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko">
+            
+            <label for="pesel">PESEL:</label>
+            <input type="text" id="pesel" name="pesel">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+            
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dane dotyczące wizyty</legend>
+            <label for="lekarz">Lekarz:</label>
+            <select id="lekarz" name="lekarz">
+                <option value="" >Wybierz lekarza</option>
+                <option value="lekarz1">logopeda dr Barszczyk</option>
+                <option value="lekarz2">Lekarz 2</option>
+            </select>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+            
+            <label for="godzina">Godzina:</label>
+            <input type="time" id="godzina" name="godzina">
+            
+            <label for="uwagi">Uwagi:</label>
+            <textarea id="uwagi" name="uwagi" rows="3"></textarea>
+        </fieldset>
+
+        <button type="submit">Umów wizytę</button>
+    </form>
+</body>
+</html>
