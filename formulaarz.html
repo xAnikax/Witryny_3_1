@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umów wizytę</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Umów wizytę lekarską</h1>
+        <form>
+            <fieldset>
+                <legend>Dane pacjenta</legend>
+                <div class="row">
+                    <div>
+                        <label for="imie">Imię:</label>
+                        <input type="text" id="imie" name="imie">
+                    </div>
+                    <div>
+                        <label for="nazwisko">Nazwisko:</label>
+                        <input type="text" id="nazwisko" name="nazwisko">
+                    </div>
+                </div>
+                <label for="pesel">PESEL:</label>
+                <input type="text" id="pesel" name="pesel">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="telefon">Numer telefonu:</label>
+                <input type="text" id="telefon" name="telefon">
+                <label for="ulica">Ulica:</label>
+                <input type="text" id="ulica" name="ulica">
+                <div class="row">
+                    <div>
+                        <label for="dom">Numer domu:</label>
+                        <input type="text" id="dom" name="dom">
+                    </div>
+                    <div>
+                        <label for="mieszkanie">Numer mieszkania:</label>
+                        <input type="text" id="mieszkanie" name="mieszkanie">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="kod">Kod pocztowy:</label>
+                        <input type="text" id="kod" name="kod">
+                    </div>
+                    <div>
+                        <label for="miasto">Miasto:</label>
+                        <input type="text" id="miasto" name="miasto">
+                    </div>
+                </div>
+                <label for="data_urodzenia">Data urodzenia:</label>
+                <input type="date" id="data_urodzenia" name="data_urodzenia">
+            </fieldset>
+            <fieldset>
+                <legend>Dane dotyczące wizyty</legend>
+                <label for="lekarz">Lekarz:</label>
+                <select id="lekarz" name="lekarz">
+                    <option value="" >Wybierz lekarza</option>
+                    <option value="lekarz1">lekarz 1</option>
+                    <option value="lekarz2">Lekarz 2</option>
+                    <option value="lekarz3">Lekarz 3</option>
+                    <option value="lekarz4">Lekarz 4</option>
+                </select>
+                <label for="data_wizyty">Data wizyty:</label>
+                <input type="date" id="data_wizyty" name="data_wizyty">
+                <label for="godzina">Godzina wizyty:</label>
+                <input type="time" id="godzina" name="godzina">
+                <label for="uwagi">Dodatkowe uwagi:</label>
+                <textarea id="uwagi" name="uwagi" rows="4"></textarea>
+            </fieldset>
+            <input type="submit" value="Umów wizytę">
+        </form>
+    </div>
+</body>
+</html>

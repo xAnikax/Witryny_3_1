@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+form {
+    width: 100%;
+}
+fieldset {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+legend {
+    color: #003366;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+input, select, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[placeholder="Wprowadź numer mieszkania (opcjonalnie)"] {
+    border: 2px solid green;
+}
+select {
+    border: 2px solid blue;
+}
+textarea {
+    border: 2px solid gray;
+}
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #00509e;
+}
+.row {
+    display: flex;
+    gap: 15px;
+}
+.row div {
+    flex: 1;
+}
