@@ -1,0 +1,22 @@
+body {
+    background-color: #fbf4db;
+    color: brown;
+}
+
+p {
+    font-size: 20px;
+    color: red;
+}
+
+div {
+    background-color: yellow;
+    color: black;
+}
+
+span {
+    font-weight: bold;
+}
+
+#naglowek{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wprowadzenie do stylów</title>
+    <link rel="stylesheet" href="cwiczenie1.css">
+    <style>
+        p {
+            background-color: rgb(229, 236, 135);
+            font-size: 25px;
+            color: hsl(240, 73%, 59%);
+        }
+    </style>
+</head>
+<body style="background-color: #fbf4db; color: brown;">
+    <h1 id="nagłowek">Wprowadzenie do styli - ćwiczenie 1</h1>
+    <h2 style="color: red; background-color: rgb(229, 236, 135);"><span>Kaskadowe Arkusze Stylów</span> to język służący do opisu formy prezentacji stron WWW</h2>
+    <div style="background-color: yellow; color: black; padding: 10px;">
+        <h3>Style można dołączać na trzy sposoby</h3>
+        <ul>
+            <li>jako osobny plik - tzw. zewnętrzny arkusz CSS</li>
+            <li>osadzając je między tagami &lt;style&gt; i &lt;/style&gt; wewnątrz sekcji &lt;head&gt;</li>
+            <li>umieszczając je wewnątrz atrybutu znacznika - tzw. style inline</li>
+        </ul>
+    </div>
+    <p id="pierwszy-paragraf" style="font-size: 30px; color: purple;">
+        Zewnętrzny arkusz stylów zawiera CSS w oddzielnym pliku z .css rozszerzeniem. Jest to najczęstsza i najpraktyczniejsza metoda wprowadzania CSS do dokumentu.
+        Możesz połączyć pojedynczy plik CSS z wieloma stronami internetowymi, stylizując je wszystkie tym samym arkuszem stylów CSS.
+    Odwołanie do zewnętrznego arkusza stylów CSS odbywa się za pomocą tagu &lt;link&gt; z atrybutem href<br>
+    &lt;link rel="stylesheet" href="nazwa_arkusza_wraz_ze_ścieżką_dostępu"&gt;</p>
+    <p>Wewnętrzny arkusz stylów znajduje się w dokumencie HTML. Aby utworzyć wewnętrzny arkusz stylów, należy umieścić CSS wewnątrz &lt;style&gt; elementu zawartego w HTML &lt;head&gt;.</p>
+    <div>
+        <p>Style inline to deklaracje CSS, które wpływają na pojedynczy element HTML, zawarty w atrybucie style.<br>
+        &lt;p style="color:red;"&gt;This is my first CSS example&lt;/p&gt;</p>
+    </div>
+</body>
+</html>
